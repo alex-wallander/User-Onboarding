@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Form from './components/Form';
@@ -64,9 +63,9 @@ function App() {
 
   const formSubmit = () => {
     const newUser = {
-      name: formValues.name.trim(),
-      email: formValues.email.trim(),
-      password: formValues.password.trim(),
+      name: formValues.name,
+      email: formValues.email,
+      password: formValues.password,
       terms: ['terms'].filter(
         term => formValues[term]
       )
