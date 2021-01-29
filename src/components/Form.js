@@ -18,7 +18,7 @@ export default function Form(props) {
         <form className='form-container' onSubmit={onSubmit}>
             <div className='form-div'>
                 <h2>Add a User</h2>
-                <button disabled={disabled}>submit</button>
+                <button className='submitBtn' disabled={disabled}>submit</button>
 
                 <div className='errors'>
                     <div>{errors.username}</div>
